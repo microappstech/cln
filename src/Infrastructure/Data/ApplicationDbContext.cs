@@ -12,6 +12,11 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplica
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
     public DbSet<TodoList> TodoLists => Set<TodoList>();
+    public DbSet<Profile> Profiles => Set<Profile>();
+    public DbSet<Page> Pages => Set<Page>();
+    public DbSet<Tab> Tabs => Set<Tab>();
+    public DbSet<Block> Blocks => Set<Block>();
+    public DbSet<Element> Elements => Set<Element>();
 
     public DbSet<TodoItem> TodoItems => Set<TodoItem>();
 
